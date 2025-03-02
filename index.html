@@ -4,135 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipankar Lahiri - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #2c3e50, #4ca1af);
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .card {
-            background: white;
-            color: black;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .bio {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <img src="me.jpg" alt="Profile Picture" class="profile-img">
-        <h1>Dipankar Lahiri - Portfolio</h1>
-        <p class="bio">Journalist with a strong foundation in data analysis, visualization, and storytelling.</p>
-        
-        <h2>Completed Data Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="completed_project.jpg" alt="Gender and Social Media Use">
-                <p><a href="#" target="_blank">Gender and Social Media Use</a></p>
+        <section class="profile-section">
+            <img src="me.jpg" alt="Dipankar Lahiri" class="profile-pic">
+            <div class="bio">
+                <p>I have been a journalist since 2014, working with Indian Express, Times of India, NDTV, and others. Initially relying on traditional mathematics for data-driven stories, I have since transitioned to computational data analysis. Currently studying Data Analysis at King's College London, I now blend investigative journalism with data science. This portfolio showcases both my academic projects and previous journalistic work.</p>
             </div>
-        </div>
-        
-        <h2>Ongoing Data Projects</h2>
-        <div class="grid">
+        </section>
+
+        <section class="completed-projects">
+            <h2>Completed Data Projects</h2>
             <div class="card">
-                <img src="ongoing_project.jpg" alt="Song Lyrics Challenges">
-                <p><a href="#" target="_blank">Song Lyrics Challenges (R version)</a></p>
+                <img src="gender_social_media.jpg" alt="Gender and Social Media Use">
+                <h3>Gender and Social Media Use</h3>
+                <p>King’s College London (2025) - Calculating the association between gender and social media use in a sample population.</p>
+                <a href="GENDER_PROJECT_LINK" target="_blank">View Project</a>
             </div>
-        </div>
-        
-        <h2>Previous Journalism Work</h2>
-        <div class="grid">
+        </section>
+
+        <section class="previous-journalism">
+            <h2>Previous Journalism Work</h2>
+            <h3>Data Stories</h3>
+            <div class="articles-grid">
+                <div class="card">
+                    <img src="covid_sports.jpg" alt="How COVID-19 Changed Sports">
+                    <h3>How COVID-19 Changed Sports</h3>
+                    <p>The Indian Express, May 2020 - Exploring the economic slump's effects on different sports industries.</p>
+                    <a href="COVID_SPORTS_LINK" target="_blank">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="athletics_gold.jpg" alt="India's Athletics Gold Medals">
+                    <h3>India's Athletics Gold Medals</h3>
+                    <p>The Bridge, August 2023 - Visualizing which Indian states produce Athletics medallists.</p>
+                    <a href="ATHLETICS_GOLD_LINK" target="_blank">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="hima_das.jpg" alt="Hima Das’ Journey">
+                    <h3>Hima Das’ Journey</h3>
+                    <p>The Times of India, March 2018 - Comparing her speeds with global standards.</p>
+                    <a href="HIMA_DAS_LINK" target="_blank">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="jeremy_weightlifting.jpg" alt="Jeremy’s Weightlifting Gold Quest">
+                    <h3>Jeremy’s Weightlifting Gold Quest</h3>
+                    <p>The Times of India, October 2018 - Comparing a young weightlifter’s records with previous Olympics.</p>
+                    <a href="JEREMY_LINK" target="_blank">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="shooting_medals.jpg" alt="Indian Shooters' Medal Chances">
+                    <h3>Indian Shooters' Medal Chances</h3>
+                    <p>The Bridge, July 2024 - Predicting India's historic Olympic performance using recent score comparisons.</p>
+                    <a href="SHOOTERS_LINK" target="_blank">Read More</a>
+                </div>
+            </div>
+            <h3>Non-Data Stories</h3>
+            <div class="articles-grid">
+                <div class="card">
+                    <img src="mary_sarita.jpg" alt="Mary Kom & Sarita Devi">
+                    <h3>Mary Kom & Sarita Devi</h3>
+                    <p>The Bridge, August 2022 - The rivalry and friendship of two of India’s top boxers.</p>
+                    <a href="MARY_SARITA_LINK" target="_blank">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="father_daughter_mizoram.jpg" alt="Father-Daughter Duo in Mizoram Football">
+                    <h3>Father-Daughter Duo in Mizoram Football</h3>
+                    <p>The Bridge, March 2023 - The story of Mizoram’s integration with India through a footballing family.</p>
+                    <a href="MIZORAM_FOOTBALL_LINK" target="_blank">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="surfing_karnataka.jpg" alt="Surfing Revolution in Karnataka">
+                    <h3>Surfing Revolution in Karnataka</h3>
+                    <p>The Bridge, December 2021 - Coastal Karnataka’s fisherfolk embracing surfing.</p>
+                    <a href="SURFING_KARNATAKA_LINK" target="_blank">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ongoing-projects">
+            <h2>Ongoing Data Projects</h2>
             <div class="card">
-                <img src="covid_sports.jpg" alt="How COVID-19 Changed Sports">
-                <p><a href="#" target="_blank">How COVID-19 Changed Sports</a></p>
+                <img src="song_lyrics.jpg" alt="Song Lyrics Analysis">
+                <h3>Song Lyrics Analysis</h3>
+                <p>King’s College London (2025) - NLP analysis of Coldplay and Taylor Swift lyrics for sentiment trends.</p>
+                <a href="SONG_LYRICS_LINK" target="_blank">View Project</a>
             </div>
-            <div class="card">
-                <img src="athletics_gold.jpg" alt="India's Athletics Gold Medals">
-                <p><a href="#" target="_blank">India's Athletics Gold Medals</a></p>
-            </div>
-            <div class="card">
-                <img src="hima_das.jpg" alt="Hima Das’ Journey">
-                <p><a href="#" target="_blank">Hima Das’ Journey</a></p>
-            </div>
-            <div class="card">
-                <img src="jeremy_weightlifting.jpg" alt="Jeremy’s Weightlifting Gold Quest">
-                <p><a href="#" target="_blank">Jeremy’s Weightlifting Gold Quest</a></p>
-            </div>
-            <div class="card">
-                <img src="shooting_medals.jpg" alt="Indian Shooters' Medal Chances">
-                <p><a href="#" target="_blank">Indian Shooters' Medal Chances</a></p>
-            </div>
-            <div class="card">
-                <img src="mary_sarita.jpg" alt="Mary Kom & Sarita Devi: Rivalry & Friendship">
-                <p><a href="#" target="_blank">Mary Kom & Sarita Devi: Rivalry & Friendship</a></p>
-            </div>
-            <div class="card">
-                <img src="olonga_mugabe.jpg" alt="Henry Olonga & Mugabe’s Impact">
-                <p><a href="#" target="_blank">Henry Olonga & Mugabe’s Impact</a></p>
-            </div>
-            <div class="card">
-                <img src="surfing_karnataka.jpg" alt="Surfing Revolution in Karnataka">
-                <p><a href="#" target="_blank">Surfing Revolution in Karnataka</a></p>
-            </div>
-            <div class="card">
-                <img src="gowda_kambala.jpg" alt="Srinivasa Gowda: Kambala Legend">
-                <p><a href="#" target="_blank">Srinivasa Gowda: Kambala Legend</a></p>
-            </div>
-            <div class="card">
-                <img src="viswanath_radio.jpg" alt="Gundappa Viswanath’s Radio Era">
-                <p><a href="#" target="_blank">Gundappa Viswanath’s Radio Era</a></p>
-            </div>
-            <div class="card">
-                <img src="nissar_pacer.jpg" alt="Mohammad Nissar: India's First Pacer">
-                <p><a href="#" target="_blank">Mohammad Nissar: India's First Pacer</a></p>
-            </div>
-            <div class="card">
-                <img src="father_daughter.jpg" alt="Father-Daughter Duo in Mizoram Football">
-                <p><a href="#" target="_blank">Father-Daughter Duo in Mizoram Football</a></p>
-            </div>
-            <div class="card">
-                <img src="asian_games_bias.jpg" alt="Anti-India Bias in Asian Games?">
-                <p><a href="#" target="_blank">Anti-India Bias in Asian Games?</a></p>
-            </div>
-            <div class="card">
-                <img src="jyothi_yarraji.jpg" alt="Jyothi Yarraji: Breaking Barriers">
-                <p><a href="#" target="_blank">Jyothi Yarraji: Breaking Barriers</a></p>
-            </div>
-            <div class="card">
-                <img src="seema_punia.jpg" alt="Seema Punia: Veteran Medallist">
-                <p><a href="#" target="_blank">Seema Punia: Veteran Medallist</a></p>
-            </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
