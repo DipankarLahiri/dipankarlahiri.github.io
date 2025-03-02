@@ -1,138 +1,141 @@
-import React from "react";
-
-const portfolioData = {
-  name: "Dipankar Lahiri",
-  bio: "Data journalist with a strong foundation in data analysis, visualization, and storytelling. Journalist since 2014, worked at The Indian Express, The Times of India, and NDTV. Currently studying data analysis at King’s College London. This portfolio features my journalistic and academic projects.",
-  profilePicture: "me.jpg", // Profile picture added
-  sections: [
-    {
-      title: "Completed Data Projects",
-      articles: [
-        {
-          title: "Completed Project: Markdown-in-Class",
-          link: "https://dipankarlahiri.github.io/Markdown-in-class/",
-          publication: "King’s College London",
-          date: "2025"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipankar Lahiri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
         }
-      ]
-    },
-    {
-      title: "Previous Journalism Work",
-      subsections: [
-        {
-          title: "Data Stories",
-          articles: [
-            {
-              title: "COVID Sports",
-              link: "https://indianexpress.com/article/explained/from-cricket-to-athletics-how-covid-19-has-hit-the-sporting-world-and-will-change-it-6388573/",
-              publication: "The Indian Express",
-              date: "May 2020"
-            },
-            {
-              title: "Athletics Gold",
-              link: "https://thebridge.in/asian-games/india-athletics-gold-medals-asian-game-list-states-punjab-leads-43845",
-              publication: "The Bridge",
-              date: "Aug 2023"
-            },
-            {
-              title: "Hima Das",
-              link: "https://timesofindia.indiatimes.com/city/guwahati/dare-to-dream-with-hima/articleshow/63443504.cms",
-              publication: "The Times of India",
-              date: "Mar 2018"
-            },
-            {
-              title: "Jeremy Weightlifting",
-              link: "https://timesofindia.indiatimes.com/city/guwahati/weightlifter-jeremy-gunning-for-historic-gold/articleshow/66141251.cms",
-              publication: "The Times of India",
-              date: "Oct 2018"
-            },
-            {
-              title: "Shooting Medals",
-              link: "https://thebridge.in/shooting/indian-shooters-scorewise-analysis-medal-chances-48535",
-              publication: "The Bridge",
-              date: "Jul 2024"
-            }
-          ]
-        },
-        {
-          title: "Non-Data Stories",
-          articles: [
-            {
-              title: "Mary & Sarita",
-              link: "https://thebridge.in/boxing/mary-kom-sarita-devi-best-friends-worst-enemies-34710",
-              publication: "The Bridge",
-              date: "Aug 2022"
-            },
-            {
-              title: "Olonga Mugabe",
-              link: "https://indianexpress.com/article/sports/cricket/henry-olonga-on-how-robert-mugabe-changed-his-life-5972641/",
-              publication: "The Indian Express",
-              date: "Jun 2019"
-            },
-            {
-              title: "Surfing Karnataka",
-              link: "https://thebridge.in/from-the-grassroots/surfing-revolution-fishing-village-coastal-karnataka-27458",
-              publication: "The Bridge",
-              date: "Dec 2021"
-            },
-            {
-              title: "Gowda Kambala",
-              link: "https://thebridge.in/featured/srinivasa-gowda-forgotten-legend-kambala-usain-bolt-record-27133",
-              publication: "The Bridge",
-              date: "Dec 2021"
-            },
-            {
-              title: "Viswanath Radio",
-              link: "https://thebridge.in/cricket/gundappa-viswanath-indian-cricket-radio-star-television-killed-30747",
-              publication: "The Bridge",
-              date: "Apr 2022"
-            },
-            {
-              title: "Nissar Pacer",
-              link: "https://indianexpress.com/article/sports/cricket/mohammad-nissar-india-first-pacer-6552009/",
-              publication: "The Indian Express",
-              date: "Jun 2020"
-            },
-            {
-              title: "Father-Daughter Football",
-              link: "https://thebridge.in/football/mama-daughter-new-hope-mizoram-football-40922",
-              publication: "The Bridge",
-              date: "Mar 2023"
-            },
-            {
-              title: "Asian Games Bias",
-              link: "https://thebridge.in/asian-games/yindu-jiayou-anti-india-bias-asian-games-china-makes-up-44331",
-              publication: "The Bridge",
-              date: "Sep 2023"
-            },
-            {
-              title: "Jyothi Yarraji",
-              link: "https://thebridge.in/athletics/jyothi-yarraji-escape-marriage-trap-break-nr-12-times-39745",
-              publication: "The Bridge",
-              date: "Nov 2022"
-            },
-            {
-              title: "Seema Punia",
-              link: "https://thebridge.in/asian-games/seema-punia-oldest-indian-medallist-athletics-no-last-bus-44170",
-              publication: "The Bridge",
-              date: "Sep 2023"
-            }
-          ]
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-      ]
-    },
-    {
-      title: "Ongoing Projects",
-      articles: [
-        {
-          title: "Ongoing Project: Song Lyric Challenges (R version)",
-          link: "https://github.com/DipankarLahiri/Song-lyrics/blob/main/SongLyricChallenges_Rversion.Rmd",
-          publication: "King’s College London",
-          date: "2025"
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 3px solid #333;
         }
-      ]
-    }
-  ]
-};
-
-export default portfolioData;
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .sections {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background: #fff;
+        }
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="me.jpg" alt="Dipankar Lahiri">
+            <p>I have been a journalist since 2014, working with Indian Express, Times of India, and NDTV. I now focus on computational data analysis while pursuing studies at King’s College London. This portfolio showcases my academic projects and past journalism work.</p>
+        </div>
+        
+        <div class="sections">
+            <h2>Previous Journalism Work</h2>
+            <h3>Data Stories</h3>
+            <div class="grid">
+                <div class="card">
+                    <a href="covid_sports.html"><img src="covid_sports.jpg" alt="COVID-19 Sports"></a>
+                    <p>How COVID-19 Changed Sports (Indian Express, 2020)</p>
+                </div>
+                <div class="card">
+                    <a href="athletics_gold.html"><img src="athletics_gold.jpg" alt="Athletics Gold"></a>
+                    <p>India's Athletics Gold Medals (The Bridge, 2023)</p>
+                </div>
+                <div class="card">
+                    <a href="hima_das.html"><img src="hima_das.jpg" alt="Hima Das"></a>
+                    <p>Hima Das’ Journey (Times of India, 2018)</p>
+                </div>
+                <div class="card">
+                    <a href="jeremy_weightlifting.html"><img src="jeremy_weightlifting.jpg" alt="Jeremy Weightlifting"></a>
+                    <p>Jeremy’s Weightlifting Gold Quest (Times of India, 2018)</p>
+                </div>
+                <div class="card">
+                    <a href="indian_shooters.html"><img src="indian_shooters.jpg" alt="Indian Shooters"></a>
+                    <p>Indian Shooters' Medal Chances (The Bridge, 2024)</p>
+                </div>
+            </div>
+            
+            <h3>Non-Data Stories</h3>
+            <div class="grid">
+                <div class="card">
+                    <a href="mary_kom.html"><img src="mary_kom.jpg" alt="Mary Kom"></a>
+                    <p>Mary Kom & Sarita Devi: Rivalry & Friendship (The Bridge, 2022)</p>
+                </div>
+                <div class="card">
+                    <a href="olong_mugabe.html"><img src="olong_mugabe.jpg" alt="Henry Olonga"></a>
+                    <p>Henry Olonga & Mugabe’s Impact (Indian Express, 2019)</p>
+                </div>
+                <div class="card">
+                    <a href="surfing_karnataka.html"><img src="surfing_karnataka.jpg" alt="Surfing Karnataka"></a>
+                    <p>Surfing Revolution in Karnataka (The Bridge, 2021)</p>
+                </div>
+                <div class="card">
+                    <a href="srinivasa_gowda.html"><img src="srinivasa_gowda.jpg" alt="Srinivasa Gowda"></a>
+                    <p>Srinivasa Gowda: Kambala Legend (The Bridge, 2021)</p>
+                </div>
+                <div class="card">
+                    <a href="viswanath_radio.html"><img src="viswanath_radio.jpg" alt="Viswanath"></a>
+                    <p>Gundappa Viswanath’s Radio Era (The Bridge, 2022)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sections">
+            <h2>Completed Data Project</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="gender_social_media.html"><img src="gender_social_media.jpg" alt="Gender Social Media"></a>
+                    <p>Gender and Social Media Use (King’s College London, 2025)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sections">
+            <h2>Ongoing Data Project</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="song_lyrics.html"><img src="song_lyrics.jpg" alt="Song Lyrics"></a>
+                    <p>Song Lyrics Sentiment Analysis (King’s College London, 2025)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
