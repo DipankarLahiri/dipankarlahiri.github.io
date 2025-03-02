@@ -1,141 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipankar Lahiri - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            border: 3px solid #333;
-        }
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .sections {
-            margin-top: 20px;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            padding: 10px;
-        }
-        .card {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            background: #fff;
-        }
-        .card img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-        }
-        .card p {
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipankar Lahiri - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border: 3px solid #333;
+      margin-bottom: 20px;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .sections {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 10px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background: #fff;
+    }
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .card h3 {
+      font-size: 16px;
+      margin: 8px 0 4px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin: 4px 0;
+    }
+    .card a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .subsection h3 {
+      margin-top: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <img src="me.jpg" alt="Dipankar Lahiri">
-            <p>I have been a journalist since 2014, working with Indian Express, Times of India, and NDTV. I now focus on computational data analysis while pursuing studies at King’s College London. This portfolio showcases my academic projects and past journalism work.</p>
-        </div>
-        
-        <div class="sections">
-            <h2>Previous Journalism Work</h2>
-            <h3>Data Stories</h3>
-            <div class="grid">
-                <div class="card">
-                    <a href="covid_sports.html"><img src="covid_sports.jpg" alt="COVID-19 Sports"></a>
-                    <p>How COVID-19 Changed Sports (Indian Express, 2020)</p>
-                </div>
-                <div class="card">
-                    <a href="athletics_gold.html"><img src="athletics_gold.jpg" alt="Athletics Gold"></a>
-                    <p>India's Athletics Gold Medals (The Bridge, 2023)</p>
-                </div>
-                <div class="card">
-                    <a href="hima_das.html"><img src="hima_das.jpg" alt="Hima Das"></a>
-                    <p>Hima Das’ Journey (Times of India, 2018)</p>
-                </div>
-                <div class="card">
-                    <a href="jeremy_weightlifting.html"><img src="jeremy_weightlifting.jpg" alt="Jeremy Weightlifting"></a>
-                    <p>Jeremy’s Weightlifting Gold Quest (Times of India, 2018)</p>
-                </div>
-                <div class="card">
-                    <a href="indian_shooters.html"><img src="indian_shooters.jpg" alt="Indian Shooters"></a>
-                    <p>Indian Shooters' Medal Chances (The Bridge, 2024)</p>
-                </div>
-            </div>
-            
-            <h3>Non-Data Stories</h3>
-            <div class="grid">
-                <div class="card">
-                    <a href="mary_kom.html"><img src="mary_kom.jpg" alt="Mary Kom"></a>
-                    <p>Mary Kom & Sarita Devi: Rivalry & Friendship (The Bridge, 2022)</p>
-                </div>
-                <div class="card">
-                    <a href="olong_mugabe.html"><img src="olong_mugabe.jpg" alt="Henry Olonga"></a>
-                    <p>Henry Olonga & Mugabe’s Impact (Indian Express, 2019)</p>
-                </div>
-                <div class="card">
-                    <a href="surfing_karnataka.html"><img src="surfing_karnataka.jpg" alt="Surfing Karnataka"></a>
-                    <p>Surfing Revolution in Karnataka (The Bridge, 2021)</p>
-                </div>
-                <div class="card">
-                    <a href="srinivasa_gowda.html"><img src="srinivasa_gowda.jpg" alt="Srinivasa Gowda"></a>
-                    <p>Srinivasa Gowda: Kambala Legend (The Bridge, 2021)</p>
-                </div>
-                <div class="card">
-                    <a href="viswanath_radio.html"><img src="viswanath_radio.jpg" alt="Viswanath"></a>
-                    <p>Gundappa Viswanath’s Radio Era (The Bridge, 2022)</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="sections">
-            <h2>Completed Data Project</h2>
-            <div class="grid">
-                <div class="card">
-                    <a href="gender_social_media.html"><img src="gender_social_media.jpg" alt="Gender Social Media"></a>
-                    <p>Gender and Social Media Use (King’s College London, 2025)</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="sections">
-            <h2>Ongoing Data Project</h2>
-            <div class="grid">
-                <div class="card">
-                    <a href="song_lyrics.html"><img src="song_lyrics.jpg" alt="Song Lyrics"></a>
-                    <p>Song Lyrics Sentiment Analysis (King’s College London, 2025)</p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="me.jpg" alt="Dipankar Lahiri">
+      <p>Dipankar Lahiri - Data Journalist<br>
+         I have been a journalist since 2014, working with Indian Express, Times of India, and NDTV. I now focus on computational data analysis while pursuing studies at King’s College London. This portfolio showcases my academic projects and past journalism work.
+      </p>
     </div>
+    
+    <!-- Section 1: Completed Data Project -->
+    <div class="sections">
+      <h2>Completed Data Project</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="https://dipankarlahiri.github.io/Markdown-in-class/" target="_blank">
+            <img src="completed_project.jpg" alt="Gender and Social Media Use">
+          </a>
+          <h3>Gender and Social Media Use</h3>
+          <p>King’s College London (2025) assignment - Calculating the association between gender and social media use in a sample population.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Section 2: Previous Journalism Work -->
+    <div class="sections">
+      <h2>Previous Journalism Work</h2>
+      
+      <!-- Data Stories Subsection (5 items) -->
+      <div class="subsection">
+        <h3>Data Stories</h3>
+        <div class="grid">
+          <div class="card">
+            <a href="https://indianexpress.com/article/explained/from-cricket-to-athletics-how-covid-19-has-hit-the-sporting-world-and-will-change-it-6388573/" target="_blank">
+              <img src="covid_sports.jpg" alt="How COVID-19 Changed Sports">
+            </a>
+            <h3>How COVID-19 Changed Sports</h3>
+            <p>Indian Express, May 2020</p>
+            <p>Exploring the effects of the economic slump triggered by the Covid-19 pandemic on different sports industries.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/asian-games/india-athletics-gold-medals-asian-game-list-states-punjab-leads-43845" target="_blank">
+              <img src="athletics_gold.jpg" alt="India's Athletics Gold Medals">
+            </a>
+            <h3>India's Athletics Gold Medals</h3>
+            <p>The Bridge, August 2023</p>
+            <p>Exploring the distribution of which Indian states Athletics medallists hail from. Used data visualisation made with online tool ChartMap.</p>
+          </div>
+          <div class="card">
+            <a href="https://timesofindia.indiatimes.com/city/guwahati/dare-to-dream-with-hima/articleshow/63443504.cms" target="_blank">
+              <img src="hima_das.jpg" alt="Hima Das’ Journey">
+            </a>
+            <h3>Hima Das’ Journey</h3>
+            <p>Times of India, March 2018</p>
+            <p>Finding an outlier in Indian athletics in terms of improvement rate, comparing her speeds with global standards.</p>
+          </div>
+          <div class="card">
+            <a href="https://timesofindia.indiatimes.com/city/guwahati/weightlifter-jeremy-gunning-for-historic-gold/articleshow/66141251.cms" target="_blank">
+              <img src="jeremy_weightlifting.jpg" alt="Jeremy’s Weightlifting Gold Quest">
+            </a>
+            <h3>Jeremy’s Weightlifting Gold Quest</h3>
+            <p>Times of India, October 2018</p>
+            <p>Comparing a young weightlifter’s records with records from the previous Olympics.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/shooting/indian-shooters-scorewise-analysis-medal-chances-48535" target="_blank">
+              <img src="shooting_medals.jpg" alt="Indian Shooters' Medal Chances">
+            </a>
+            <h3>Indian Shooters' Medal Chances</h3>
+            <p>The Bridge, July 2024</p>
+            <p>A comparison of Indian shooters’ recent scores against the top global scores helped successfully predict a historic Olympic outing.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Non-Data Stories Subsection (10 items) -->
+      <div class="subsection">
+        <h3>Non-Data Stories</h3>
+        <div class="grid">
+          <div class="card">
+            <a href="https://thebridge.in/boxing/mary-kom-sarita-devi-best-friends-worst-enemies-34710" target="_blank">
+              <img src="mary_sarita.jpg" alt="Mary Kom & Sarita Devi: Rivalry & Friendship">
+            </a>
+            <h3>Mary Kom & Sarita Devi: Rivalry & Friendship</h3>
+            <p>The Bridge, August 2022</p>
+            <p>A report from troubled Imphal on the fractured relationship between two of India’s most successful boxers.</p>
+          </div>
+          <div class="card">
+            <a href="https://indianexpress.com/article/sports/cricket/henry-olonga-on-how-robert-mugabe-changed-his-life-5972641/" target="_blank">
+              <img src="olong_mugabe.jpg" alt="Henry Olonga & Mugabe’s Impact">
+            </a>
+            <h3>Henry Olonga & Mugabe’s Impact</h3>
+            <p>Indian Express, June 2019</p>
+            <p>Zimbabwean cricketer who had to live in exile because of his stance towards Robert Mugabe’s government speaks after the leader’s death.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/from-the-grassroots/surfing-revolution-fishing-village-coastal-karnataka-27458" target="_blank">
+              <img src="surfing_karnataka.jpg" alt="Surfing Revolution in Karnataka">
+            </a>
+            <h3>Surfing Revolution in Karnataka</h3>
+            <p>The Bridge, December 2021</p>
+            <p>A report from coastal Karnataka, where generational fisherfolk now have a new hobby and a new way of enjoying the sea.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/featured/srinivasa-gowda-forgotten-legend-kambala-usain-bolt-record-27133" target="_blank">
+              <img src="gowda_kambala.jpg" alt="Srinivasa Gowda: Kambala Legend">
+            </a>
+            <h3>Srinivasa Gowda: Kambala Legend</h3>
+            <p>The Bridge, December 2021</p>
+            <p>A report from coastal Karnataka on a rural sports champion elevated to stardom by comparisons with Usain Bolt.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/cricket/gundappa-viswanath-indian-cricket-radio-star-television-killed-30747" target="_blank">
+              <img src="viswanath_radio.jpg" alt="Gundappa Viswanath’s Radio Era">
+            </a>
+            <h3>Gundappa Viswanath’s Radio Era</h3>
+            <p>The Bridge, April 2022</p>
+            <p>Reserved but legendary former cricketer opens up about the heartbreak of being dropped before the 1983 World Cup.</p>
+          </div>
+          <div class="card">
+            <a href="https://indianexpress.com/article/sports/cricket/mohammad-nissar-india-first-pacer-6552009/" target="_blank">
+              <img src="nissar_pacer.jpg" alt="Mohammad Nissar: India's First Pacer">
+            </a>
+            <h3>Mohammad Nissar: India's First Pacer</h3>
+            <p>Indian Express, June 2020</p>
+            <p>Charting the career of the cricketer who bowled India’s first ball in 1934, piecing together documents, photos and conversations with his family and ex-cricketers.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/football/mama-daughter-new-hope-mizoram-football-40922" target="_blank">
+              <img src="father_daughter.jpg" alt="Father-Daughter Duo in Mizoram Football">
+            </a>
+            <h3>Father-Daughter Duo in Mizoram Football</h3>
+            <p>The Bridge, March 2023</p>
+            <p>A report from Aizawl on Mizoram’s integration with India through the family of a legendary footballer.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/asian-games/yindu-jiayou-anti-india-bias-asian-games-china-makes-up-44331" target="_blank">
+              <img src="asian_games_bias.jpg" alt="Anti-India Bias in Asian Games">
+            </a>
+            <h3>Anti-India Bias in Asian Games?</h3>
+            <p>The Bridge, September 2023</p>
+            <p>A reflection on my experience covering the Asian Games in Hangzhou, China.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/athletics/jyothi-yarraji-escape-marriage-trap-break-nr-12-times-39745" target="_blank">
+              <img src="jyothi_yarraji.jpg" alt="Jyothi Yarraji: Breaking Barriers">
+            </a>
+            <h3>Jyothi Yarraji: Breaking Barriers</h3>
+            <p>The Bridge, November 2022</p>
+            <p>A hurdler’s unlikely rise from obscurity to being seen as the country’s major Athletics hope.</p>
+          </div>
+          <div class="card">
+            <a href="https://thebridge.in/asian-games/seema-punia-oldest-indian-medallist-athletics-no-last-bus-44170" target="_blank">
+              <img src="seema_punia.jpg" alt="Seema Punia: Veteran Medallist">
+            </a>
+            <h3>Seema Punia: Veteran Medallist</h3>
+            <p>The Bridge, September 2023</p>
+            <p>India's oldest ever Athletics medallist at the Asian Games, 40-year-old Seema Punia has seen her sport transform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Section 3: Ongoing Data Project -->
+    <div class="sections">
+      <h2>Ongoing Data Project</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="https://github.com/DipankarLahiri/Song-lyrics/blob/main/SongLyricChallenges_Rversion.Rmd" target="_blank">
+            <img src="ongoing_project.jpg" alt="Song Lyrics Sentiment Analysis">
+          </a>
+          <h3>Song Lyrics Sentiment Analysis</h3>
+          <p>King’s College London (2025) assignment - Natural language processing on lyrics of Coldplay and Taylor Swift to analyse sentiment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
