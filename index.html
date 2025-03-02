@@ -1,144 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipankar Lahiri - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
+import React from "react";
+
+const portfolioData = {
+  name: "Dipankar Lahiri",
+  bio: "Data journalist with a strong foundation in data analysis, visualization, and storytelling. Journalist since 2014, worked at The Indian Express, The Times of India, and NDTV. Currently studying data analysis at King’s College London. This portfolio features my journalistic and academic projects.",
+  profilePicture: "me.jpg", // Profile picture added
+  sections: [
+    {
+      title: "Completed Data Projects",
+      articles: [
+        { title: "Completed Project: Markdown-in-Class", link: "https://dipankarlahiri.github.io/Markdown-in-class/", publication: "King’s College London", date: "2025" }
+      ]
+    },
+    {
+      title: "Previous Journalism Work",
+      subsections: [
+        {
+          title: "Data Stories",
+          articles: [
+            { title: "COVID Sports", link: "https://indianexpress.com/article/explained/from-cricket-to-athletics-how-covid-19-has-hit-the-sporting-world-and-will-change-it-6388573/", publication: "The Indian Express", date: "May 2020" },
+            { title: "Athletics Gold", link: "https://thebridge.in/asian-games/india-athletics-gold-medals-asian-game-list-states-punjab-leads-43845", publication: "The Bridge", date: "Aug 2023" },
+            { title: "Hima Das", link: "https://timesofindia.indiatimes.com/city/guwahati/dare-to-dream-with-hima/articleshow/63443504.cms", publication: "The Times of India", date: "Mar 2018" },
+            { title: "Jeremy Weightlifting", link: "https://timesofindia.indiatimes.com/city/guwahati/weightlifter-jeremy-gunning-for-historic-gold/articleshow/66141251.cms", publication: "The Times of India", date: "Oct 2018" },
+            { title: "Shooting Medals", link: "https://thebridge.in/shooting/indian-shooters-scorewise-analysis-medal-chances-48535", publication: "The Bridge", date: "Jul 2024" }
+          ]
+        },
+        {
+          title: "Non-Data Stories",
+          articles: [
+            { title: "Mary & Sarita", link: "https://thebridge.in/boxing/mary-kom-sarita-devi-best-friends-worst-enemies-34710", publication: "The Bridge", date: "Aug 2022" },
+            { title: "Olonga Mugabe", link: "https://indianexpress.com/article/sports/cricket/henry-olonga-on-how-robert-mugabe-changed-his-life-5972641/", publication: "The Indian Express", date: "Jun 2019" },
+            { title: "Surfing Karnataka", link: "https://thebridge.in/from-the-grassroots/surfing-revolution-fishing-village-coastal-karnataka-27458", publication: "The Bridge", date: "Dec 2021" },
+            { title: "Gowda Kambala", link: "https://thebridge.in/featured/srinivasa-gowda-forgotten-legend-kambala-usain-bolt-record-27133", publication: "The Bridge", date: "Dec 2021" },
+            { title: "Viswanath Radio", link: "https://thebridge.in/cricket/gundappa-viswanath-indian-cricket-radio-star-television-killed-30747", publication: "The Bridge", date: "Apr 2022" },
+            { title: "Nissar Pacer", link: "https://indianexpress.com/article/sports/cricket/mohammad-nissar-india-first-pacer-6552009/", publication: "The Indian Express", date: "Jun 2020" },
+            { title: "Father-Daughter Football", link: "https://thebridge.in/football/mama-daughter-new-hope-mizoram-football-40922", publication: "The Bridge", date: "Mar 2023" },
+            { title: "Asian Games Bias", link: "https://thebridge.in/asian-games/yindu-jiayou-anti-india-bias-asian-games-china-makes-up-44331", publication: "The Bridge", date: "Sep 2023" },
+            { title: "Jyothi Yarraji", link: "https://thebridge.in/athletics/jyothi-yarraji-escape-marriage-trap-break-nr-12-times-39745", publication: "The Bridge", date: "Nov 2022" },
+            { title: "Seema Punia", link: "https://thebridge.in/asian-games/seema-punia-oldest-indian-medallist-athletics-no-last-bus-44170", publication: "The Bridge", date: "Sep 2023" }
+          ]
         }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 40px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .item {
-            margin: 15px;
-            text-align: center;
-        }
-        img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        .caption {
-            margin-top: 8px;
-            font-size: 14px;
-            color: #333;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Dipankar Lahiri - Portfolio</h1>
-    
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Data journalist with a strong foundation in data analysis, visualization, and storytelling. Journalist since 2014, worked at The Indian Express, The Times of India, and NDTV. Currently studying data analysis at King’s College London. This portfolio features my journalistic and academic projects.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Completed Data Projects</h2>
-        <div class="container">
-            <div class="item">
-                <img src="completed_project.jpg" alt="Completed Project">
-                <div class="caption">King’s College London, 2025</div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="section">
-        <h2>Previous Journalism Work</h2>
-        
-        <h3>Data Stories</h3>
-        <div class="container">
-            <div class="item">
-                <img src="covid_sports.jpg" alt="COVID Sports">
-                <div class="caption">The Indian Express, May 2020</div>
-            </div>
-            <div class="item">
-                <img src="athletics_gold.jpg" alt="Athletics Gold">
-                <div class="caption">The Bridge, Aug 2023</div>
-            </div>
-            <div class="item">
-                <img src="hima_das.jpg" alt="Hima Das">
-                <div class="caption">The Times of India, Mar 2018</div>
-            </div>
-            <div class="item">
-                <img src="jeremy_weightlifting.jpg" alt="Jeremy Weightlifting">
-                <div class="caption">The Times of India, Oct 2018</div>
-            </div>
-            <div class="item">
-                <img src="shooting_medals.jpg" alt="Shooting Medals">
-                <div class="caption">The Bridge, Jul 2024</div>
-            </div>
-        </div>
-        
-        <h3>Non-Data Stories</h3>
-        <div class="container">
-            <div class="item">
-                <img src="mary_sarita.jpg" alt="Mary & Sarita">
-                <div class="caption">The Bridge, Aug 2022</div>
-            </div>
-            <div class="item">
-                <img src="olonga_mugabe.jpg" alt="Olonga Mugabe">
-                <div class="caption">The Indian Express, Jun 2019</div>
-            </div>
-            <div class="item">
-                <img src="surfing_karnataka.jpg" alt="Surfing Karnataka">
-                <div class="caption">The Bridge, Dec 2021</div>
-            </div>
-            <div class="item">
-                <img src="gowda_kambala.jpg" alt="Gowda Kambala">
-                <div class="caption">The Bridge, Dec 2021</div>
-            </div>
-            <div class="item">
-                <img src="viswanath_radio.jpg" alt="Viswanath Radio">
-                <div class="caption">The Bridge, Apr 2022</div>
-            </div>
-            <div class="item">
-                <img src="nissar_pacer.jpg" alt="Nissar Pacer">
-                <div class="caption">The Indian Express, Jun 2020</div>
-            </div>
-            <div class="item">
-                <img src="father_daughter.jpg" alt="Father-Daughter Football">
-                <div class="caption">The Bridge, Mar 2023</div>
-            </div>
-            <div class="item">
-                <img src="asian_games_bias.jpg" alt="Asian Games Bias">
-                <div class="caption">The Bridge, Sep 2023</div>
-            </div>
-            <div class="item">
-                <img src="jyothi_yarraji.jpg" alt="Jyothi Yarraji">
-                <div class="caption">The Bridge, Nov 2022</div>
-            </div>
-            <div class="item">
-                <img src="seema_punia.jpg" alt="Seema Punia">
-                <div class="caption">The Bridge, Sep 2023</div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="section">
-        <h2>Ongoing Projects</h2>
-        <div class="container">
-            <div class="item">
-                <img src="ongoing_project.jpg" alt="Ongoing Project">
-                <div class="caption">King’s College London, 2025</div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+      ]
+    },
+    {
+      title: "Ongoing Projects",
+      articles: [
+        { title: "Ongoing Project: Song Lyric Challenges (R version)", link: "https://github.com/DipankarLahiri/Song-lyrics/blob/main/SongLyricChallenges_Rversion.Rmd", publication: "King’s College London", date: "2025" }
+      ]
+    }
+  ]
+};
+
+export default portfolioData;
