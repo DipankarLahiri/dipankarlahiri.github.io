@@ -4,135 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipankar Lahiri - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .container {
-            max-width: 1200px;
+            width: 80%;
             margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        .profile {
-            display: flex;
-            align-items: center;
+        .profile-section {
+            text-align: center;
             padding: 20px;
+            background: #ffffff;
             border: 3px solid #333;
+            margin-bottom: 20px;
         }
-        .profile img {
-            width: 150px;
-            height: 150px;
+        .profile-section img {
+            width: 200px;
+            height: auto;
             border-radius: 50%;
-            margin-right: 20px;
         }
-        .sections {
-            margin-top: 20px;
-            border: 1px solid #ccc;
-            padding: 10px;
+        .portfolio-section {
+            background: #ffffff;
+            padding: 20px;
+            border: 2px solid #999;
+            margin-bottom: 20px;
         }
-        .grid {
+        .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(5, 1fr);
             gap: 15px;
-            padding: 10px;
         }
-        .card {
-            border: 1px solid #ddd;
+        .grid-item {
+            background: #fff;
             padding: 10px;
             text-align: center;
-            background: #fff;
+            border: 1px solid #ddd;
         }
-        .card img {
+        .grid-item img {
             width: 100%;
-            height: 120px;
-            object-fit: cover;
+            height: auto;
         }
-        .card p {
-            font-size: 14px;
-            color: #555;
+        .grid-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile">
-            <img src="me.jpg" alt="Dipankar Lahiri">
-            <p>I have been a journalist since 2014, working with Indian Express, Times of India, and NDTV. I now focus on computational data analysis while pursuing studies at King’s College London. This portfolio showcases my academic projects and past journalism work.</p>
+        <div class="profile-section">
+            <img src="me.jpg" alt="Profile Picture">
+            <h1>Dipankar Lahiri</h1>
+            <p>Journalist since 2014, worked at Indian Express, Times of India, NDTV. Currently studying data analysis at King’s College London. This portfolio features my journalistic and academic projects.</p>
         </div>
-        
-        <div class="sections">
+
+        <div class="portfolio-section">
+            <h2>Completed Data Project</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="gender_socialmedia.jpg" alt="Gender and Social Media Use">
+                    <a href="#">Gender and Social Media Use</a>
+                    <p>King’s College London (2025) - Association between gender and social media use in a sample population.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-section">
             <h2>Previous Journalism Work</h2>
             <h3>Data Stories</h3>
-            <div class="grid">
-                <div class="card">
-                    <a href="covid_sports.html"><img src="covid_sports.jpg" alt="COVID-19 Sports"></a>
-                    <p>How COVID-19 Changed Sports (Indian Express, 2020)</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="covid_sports.jpg" alt="How COVID-19 Changed Sports">
+                    <a href="link-to-article-1">How COVID-19 Changed Sports</a>
+                    <p>The Indian Express (May 2020) - Impact of the economic slump on sports industries.</p>
                 </div>
-                <div class="card">
-                    <a href="athletics_gold.html"><img src="athletics_gold.jpg" alt="Athletics Gold"></a>
-                    <p>India's Athletics Gold Medals (The Bridge, 2023)</p>
+                <div class="grid-item">
+                    <img src="athletics_gold.jpg" alt="India's Athletics Gold Medals">
+                    <a href="link-to-article-2">India's Athletics Gold Medals</a>
+                    <p>The Bridge (Aug 2023) - State-wise distribution of Indian athletics medallists.</p>
                 </div>
-                <div class="card">
-                    <a href="hima_das.html"><img src="hima_das.jpg" alt="Hima Das"></a>
-                    <p>Hima Das’ Journey (Times of India, 2018)</p>
+                <div class="grid-item">
+                    <img src="hima_das.jpg" alt="Hima Das’ Journey">
+                    <a href="link-to-article-3">Hima Das’ Journey</a>
+                    <p>The Times of India (Mar 2018) - Analysing an outlier in Indian athletics.</p>
                 </div>
-                <div class="card">
-                    <a href="jeremy_weightlifting.html"><img src="jeremy_weightlifting.jpg" alt="Jeremy Weightlifting"></a>
-                    <p>Jeremy’s Weightlifting Gold Quest (Times of India, 2018)</p>
+                <div class="grid-item">
+                    <img src="jeremy_weightlifting.jpg" alt="Jeremy’s Weightlifting Gold Quest">
+                    <a href="link-to-article-4">Jeremy’s Weightlifting Gold Quest</a>
+                    <p>The Times of India (Oct 2018) - Comparing his records with Olympic history.</p>
                 </div>
-                <div class="card">
-                    <a href="indian_shooters.html"><img src="indian_shooters.jpg" alt="Indian Shooters"></a>
-                    <p>Indian Shooters' Medal Chances (The Bridge, 2024)</p>
+                <div class="grid-item">
+                    <img src="indian_shooters.jpg" alt="Indian Shooters' Medal Chances">
+                    <a href="link-to-article-5">Indian Shooters' Medal Chances</a>
+                    <p>The Bridge (July 2024) - Predicting India’s Olympic medal tally.</p>
                 </div>
             </div>
-            
             <h3>Non-Data Stories</h3>
-            <div class="grid">
-                <div class="card">
-                    <a href="mary_kom.html"><img src="mary_kom.jpg" alt="Mary Kom"></a>
-                    <p>Mary Kom & Sarita Devi: Rivalry & Friendship (The Bridge, 2022)</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="mary_kom.jpg" alt="Mary Kom & Sarita Devi">
+                    <a href="link-to-article-6">Mary Kom & Sarita Devi</a>
+                    <p>The Bridge (Aug 2022) - Imphal’s boxing rivalry and friendship.</p>
                 </div>
-                <div class="card">
-                    <a href="olong_mugabe.html"><img src="olong_mugabe.jpg" alt="Henry Olonga"></a>
-                    <p>Henry Olonga & Mugabe’s Impact (Indian Express, 2019)</p>
+                <div class="grid-item">
+                    <img src="olong_mugabe.jpg" alt="Henry Olonga & Mugabe’s Impact">
+                    <a href="link-to-article-7">Henry Olonga & Mugabe’s Impact</a>
+                    <p>The Indian Express (Jun 2019) - Zimbabwean cricketer in exile.</p>
                 </div>
-                <div class="card">
-                    <a href="surfing_karnataka.html"><img src="surfing_karnataka.jpg" alt="Surfing Karnataka"></a>
-                    <p>Surfing Revolution in Karnataka (The Bridge, 2021)</p>
+                <div class="grid-item">
+                    <img src="surfing_karnataka.jpg" alt="Surfing Revolution in Karnataka">
+                    <a href="link-to-article-8">Surfing Revolution in Karnataka</a>
+                    <p>The Bridge (Dec 2021) - Fisherfolk embrace a new sport.</p>
                 </div>
-                <div class="card">
-                    <a href="srinivasa_gowda.html"><img src="srinivasa_gowda.jpg" alt="Srinivasa Gowda"></a>
-                    <p>Srinivasa Gowda: Kambala Legend (The Bridge, 2021)</p>
+                <div class="grid-item">
+                    <img src="gowda_legend.jpg" alt="Srinivasa Gowda: Kambala Legend">
+                    <a href="link-to-article-9">Srinivasa Gowda: Kambala Legend</a>
+                    <p>The Bridge (Dec 2021) - Social media fake news and rural sports.</p>
                 </div>
-                <div class="card">
-                    <a href="viswanath_radio.html"><img src="viswanath_radio.jpg" alt="Viswanath"></a>
-                    <p>Gundappa Viswanath’s Radio Era (The Bridge, 2022)</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="sections">
-            <h2>Completed Data Project</h2>
-            <div class="grid">
-                <div class="card">
-                    <a href="gender_social_media.html"><img src="gender_social_media.jpg" alt="Gender Social Media"></a>
-                    <p>Gender and Social Media Use (King’s College London, 2025)</p>
+                <div class="grid-item">
+                    <img src="jyothi_yarraji.jpg" alt="Jyothi Yarraji: Breaking Barriers">
+                    <a href="link-to-article-10">Jyothi Yarraji: Breaking Barriers</a>
+                    <p>The Bridge (Nov 2022) - India’s major athletics hope.</p>
                 </div>
             </div>
         </div>
-        
-        <div class="sections">
-            <h2>Ongoing Data Project</h2>
-            <div class="grid">
-                <div class="card">
-                    <a href="song_lyrics.html"><img src="song_lyrics.jpg" alt="Song Lyrics"></a>
-                    <p>Song Lyrics Sentiment Analysis (King’s College London, 2025)</p>
+
+        <div class="portfolio-section">
+            <h2>Ongoing Project</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="song_lyrics.jpg" alt="Song Lyrics NLP">
+                    <a href="#">Song Lyrics NLP</a>
+                    <p>King’s College London (2025) - NLP analysis on Coldplay & Taylor Swift lyrics.</p>
                 </div>
             </div>
         </div>
