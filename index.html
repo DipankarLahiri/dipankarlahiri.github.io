@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #e8f0f8, #d4e4f2);
+      background: linear-gradient(to right, #001f3f, #003366); /* Dark blue background */
       margin: 0;
       padding: 20px;
     }
@@ -16,10 +16,10 @@
       max-width: 1200px;
       margin: auto;
       padding: 20px;
-      background: linear-gradient(135deg, #ffffff, #f4f4f4);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      border-radius: 15px;
-      border: 2px solid #ccc;
+      background: linear-gradient(to bottom right, #1a1a2e, #16213e); /* Dark gradient */
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      color: #ffffff; /* White text for contrast */
     }
     header {
       text-align: center;
@@ -28,17 +28,17 @@
     }
     header h1 {
       font-size: 2.5em;
-      color: #0073e6;
+      color: #00aaff;
       margin: 0;
     }
     .profile {
       display: flex;
       align-items: center;
       padding: 20px;
-      border: 3px solid #333;
+      border: 3px solid #0073e6;
       margin-bottom: 20px;
       border-radius: 10px;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255,255,255,0.1);
     }
     .profile img {
       width: 150px;
@@ -51,10 +51,10 @@
     }
     .profile p strong {
       font-size: 2em;
-      color: #444;
+      color: #FFD700; /* Gold color for emphasis */
     }
     .profile p a {
-      color: #0073e6;
+      color: #00aaff;
       text-decoration: none;
       font-weight: bold;
       margin-left: 10px;
@@ -64,12 +64,11 @@
     }
     .sections {
       margin-top: 20px;
-      border: 1px solid #bbb;
-      padding: 15px;
+      border: 1px solid #005f99;
+      padding: 10px;
       margin-bottom: 20px;
-      border-radius: 15px;
-      background: linear-gradient(135deg, #ffffff, #f4f4f4);
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
     }
     .grid {
       display: grid;
@@ -78,17 +77,17 @@
       padding: 10px;
     }
     .card {
-      border: 1px solid #ddd;
+      border: 1px solid #004466;
       padding: 10px;
       text-align: center;
-      background: #fff;
+      background: rgba(255,255,255,0.1);
       border-radius: 10px;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      color: #ffffff;
     }
     .card:hover {
       transform: scale(1.05);
-      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     }
     .card img {
       width: 100%;
@@ -102,11 +101,11 @@
     }
     .card p {
       font-size: 14px;
-      color: #555;
+      color: #ccc;
       margin: 4px 0;
     }
     .card a {
-      color: #0073e6;
+      color: #00aaff;
       text-decoration: none;
     }
     .card a:hover {
@@ -114,7 +113,7 @@
     }
     .subsection h3 {
       margin-top: 20px;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #005f99;
       padding-bottom: 5px;
     }
   </style>
@@ -135,9 +134,6 @@
         <a href="https://www.linkedin.com/in/dipankar-lahiri-2214b4137/" target="_blank">LinkedIn</a>
       </p>
     </div>
-  </div>
-</body>
-</html>
     
     <!-- Section 1: Completed Data Projects -->
     <div class="sections">
