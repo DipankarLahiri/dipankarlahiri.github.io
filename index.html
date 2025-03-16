@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #001f3f, #003366); /* Dark blue background */
+      background: linear-gradient(to right, #001f3f, #003366);
       margin: 0;
       padding: 20px;
     }
@@ -16,10 +16,10 @@
       max-width: 1200px;
       margin: auto;
       padding: 20px;
-      background: linear-gradient(to bottom right, #1a1a2e, #16213e); /* Dark gradient */
+      background: linear-gradient(to bottom right, #1a1a2e, #16213e);
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
       border-radius: 10px;
-      color: #ffffff; /* White text for contrast */
+      color: #ffffff;
     }
     header {
       text-align: center;
@@ -34,28 +34,28 @@
     .profile {
       display: flex;
       align-items: center;
-      justify-content: center;
       padding: 20px;
       border: 3px solid #0073e6;
       margin-bottom: 20px;
       border-radius: 10px;
       background: rgba(255,255,255,0.1);
-      flex-wrap: wrap; /* Allows wrapping on smaller screens */
-      text-align: center;
+      text-align: left;
     }
     .profile img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      margin: 10px;
+      margin-right: 20px;
+      flex-shrink: 0;
     }
     .profile p {
       font-size: 16px;
-      max-width: 600px; /* Prevents text from stretching too wide */
+      flex-grow: 1;
+      max-width: 600px;
     }
     .profile p strong {
       font-size: 1.8em;
-      color: #FFD700; /* Gold color for emphasis */
+      color: #FFD700;
     }
     .profile p a {
       color: #00aaff;
@@ -124,13 +124,15 @@
     /* Mobile Adjustments */
     @media (max-width: 768px) {
       .profile {
-        flex-direction: column; /* Stacks image and text */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         padding: 15px;
       }
       .profile img {
         width: 120px;
         height: 120px;
+        margin-right: 0;
         margin-bottom: 10px;
       }
       .profile p {
@@ -138,13 +140,13 @@
         padding: 0 10px;
       }
       .grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
       }
       .card {
         padding: 15px;
       }
     }
-  </style>
+</style>
 </head>
 <body>
   <div class="container">
